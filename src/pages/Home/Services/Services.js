@@ -8,8 +8,8 @@ const Services = () => {
     setServices(servicesData);
   }, []);
   return (
-    <div>
-      <h2>our services</h2>
+    <div className="mt-5">
+      <h2 className="text-warning ">our services</h2>
      <div className="container">
      <div className="row">
         {services.map((service) => (

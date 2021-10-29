@@ -6,12 +6,14 @@ import Homee from './pages/Home/Homee/Homee';
 import NotFound from './pages/NotFound/NotFound';
 import Details from './pages/Details/Details';
 import About from './pages/About/About';
+import AuthProvider from './Context/AuthProvider';
 
 
 
 function App() {
   return (
-    <div className="App">
+  <AuthProvider>
+      <div className="App">
       <Router>
         <Header></Header>
         <Switch>
@@ -24,6 +26,9 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
+            <Route path="/blogs">
+
+            </Route>
             <Route path="/details/:id">
               <Details></Details>
             </Route>
@@ -33,6 +38,7 @@ function App() {
         </Switch>
       </Router>
     </div>
+  </AuthProvider>
   );
 }
 

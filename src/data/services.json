@@ -3,36 +3,48 @@
       "id": 1,
       "name": "Paris Hill Tour",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam fugiat dolorum perspiciatis enim deleniti laborum obcaecati provident iure minus eveniet architecto exercitationem quaerat hic in atque, sit dolores unde!",
-      "img": "https://www.tourx-react.egenslab.com/static/media/p-1.43d43fdd.png"
+      "img": "https://www.tourx-react.egenslab.com/static/media/p-1.43d43fdd.png",
+      "cost":"180/Per Person",
+      "time":"5 Days/6 night"
     },
     {
       "id": 2,
       "name": "Lake Garda, Italy",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam fugiat dolorum perspiciatis enim deleniti laborum obcaecati provident iure minus eveniet architecto exercitationem quaerat hic in atque, sit dolores unde!",
-      "img": "https://www.tourx-react.egenslab.com/static/media/p-2.02c7fd31.png"
+      "img": "https://www.tourx-react.egenslab.com/static/media/p-2.02c7fd31.png",
+      "cost":"280/Per Person",
+      "time":"5 Days/6 night"
     },
     {
       "id": 3,
       "name": "Mount Dtna, Italyr",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam fugiat dolorum perspiciatis enim deleniti laborum obcaecati provident iure minus eveniet architecto exercitationem quaerat hic in atque, sit dolores unde!",
-      "img": "https://www.tourx-react.egenslab.com/static/media/p-3.460015b6.png"
+      "img": "https://www.tourx-react.egenslab.com/static/media/p-3.460015b6.png",
+      "cost":"120/Per Person",
+      "time":"5 Days/6 night"
     },
     {
       "id": 4,
       "name": "Amalfi Costa, Italy",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam fugiat dolorum perspiciatis enim deleniti laborum obcaecati provident iure minus eveniet architecto exercitationem quaerat hic in atque, sit dolores unde!",
-      "img": "https://www.tourx-react.egenslab.com/static/media/p-4.5a3083bb.png"
+      "img": "https://www.tourx-react.egenslab.com/static/media/p-4.5a3083bb.png",
+      "cost":"300/Per Person",
+      "time":"5 Days/6 night"
     },
     {
       "id": 5,
       "name": "French Rivira, France",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam fugiat dolorum perspiciatis enim deleniti laborum obcaecati provident iure minus eveniet architecto exercitationem quaerat hic in atque, sit dolores unde!",
-      "img": "https://www.tourx-react.egenslab.com/static/media/p-5.194db7b2.png"
+      "img": "https://www.tourx-react.egenslab.com/static/media/p-5.194db7b2.png",
+      "cost":"240/Per Person",
+      "time":"5 Days/6 night"
     },
     {
       "id": 6,
       "name": "Lake Geneva, France",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam fugiat dolorum perspiciatis enim deleniti laborum obcaecati provident iure minus eveniet architecto exercitationem quaerat hic in atque, sit dolores unde!",
-      "img": "https://www.tourx-react.egenslab.com/static/media/p-6.1c3145eb.png"
+      "img": "https://www.tourx-react.egenslab.com/static/media/p-6.1c3145eb.png",
+      "cost":"145/Per Person",
+      "time":"5 Days/6 night"
     }
   ]
