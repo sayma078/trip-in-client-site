@@ -7,6 +7,11 @@ import NotFound from './pages/NotFound/NotFound';
 import Details from './pages/Details/Details';
 import About from './pages/About/About';
 import AuthProvider from './Context/AuthProvider';
+import Login from './pages/Login/Login/Login';
+import Footer from './pages/Shared/Footer/Footer';
+import AddService from './pages/AddService/AddService';
+import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
+import ManageBooking from './pages/ManageBooking/ManageBooking';
 
 
 
@@ -26,16 +31,26 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
+            
             <Route path="/blogs">
-
             </Route>
-            <Route path="/details/:id">
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/details/:id">
               <Details></Details>
+            </PrivateRoute>
+            <Route path="/addService">
+              <AddService></AddService>
+            </Route>
+            <Route path="/manageBooking">
+              <ManageBooking></ManageBooking>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   </AuthProvider>

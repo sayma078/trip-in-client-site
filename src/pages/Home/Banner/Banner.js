@@ -14,8 +14,8 @@ const Banner = () => {
           <img className="d-block w-100 " src={banner1} alt="First slide" />
           <Carousel.Caption className="text-info">
             <h2>
-              Care for Your <span className="text-warning"> Smile</span>{" "}
-              Committed to Excellence
+              Amazing<span className="text-warning"> Tour</span>{" "}
+              With us
             </h2>
           </Carousel.Caption>
         </Carousel.Item>
@@ -24,9 +24,7 @@ const Banner = () => {
 
           <Carousel.Caption className="text-info">
             <h2>
-              Committed to Excellence{" "}
-              <span className="text-warning"> Personalized</span> and{" "}
-              <span className="text-warning">Comfortable </span> Attachment{" "}
+             Find your <span className="text-warning">Paradise</span>
             </h2>
           </Carousel.Caption>
         </Carousel.Item>
@@ -35,7 +33,7 @@ const Banner = () => {
 
           <Carousel.Caption className="text-info">
             <h2>
-              Be proud of your <span className="text-warning">Smile</span>
+              Have fun with <span className="text-warning">Family</span>
             </h2>
           </Carousel.Caption>
         </Carousel.Item>

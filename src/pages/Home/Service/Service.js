@@ -5,16 +5,16 @@ import "./Service.css";
 
 const Service = (props) => {
     const {service} = props;
-    const{id, name, img, description}= service;
+    const{_id, name, img, description}= service;
     return (
-        <div class="col-md-6 g-3  ">
-        <div class="card ">
-          <img src={img} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title text-info">{name}</h5>
-            <p class="card-text">{description.slice(0,110)}...</p>
+        <div className="col-md-6 g-3  ">
+        <div className="card ">
+          <img src={img} className="card-img-top p-3" alt="..." />
+          <div className="card-body">
+            <h5 className="card-title text-info">{name}</h5>
+            <p className="card-text">{description.slice(0,110)}...</p>
             <br />
-            <Nav.Link as={Link} to={`/details/${id}`}><button className="btn btn-warning">Book now</button></Nav.Link>
+            <Nav.Link as={Link} to={`/details/${_id}`}><button className="btn btn-warning">Book now</button></Nav.Link>
           </div>
         </div>
       </div>

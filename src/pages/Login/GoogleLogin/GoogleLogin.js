@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import {GoogleAuthProvider, getAuth, signInWithPopup} from "firebase/auth";
 import { useHistory, useLocation } from 'react-router';
 import { AuthContext } from '../../../Context/AuthProvider';
+import initializeAuthentication from '../Firebase/firebase.init';
 
+initializeAuthentication()
 const GoogleLogin = () => {
    const [loginUser, setLoginUser] = useContext(AuthContext); 
    const history = useHistory();

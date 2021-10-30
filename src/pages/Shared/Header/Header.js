@@ -25,7 +25,7 @@ const Header = () => {
     <Nav className="me-auto">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
       <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-      <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+      <Nav.Link as={Link} to="/manageBooking">Manage Booking</Nav.Link>
       {loginUser?.email ? (
                 <NavLink onClick={handleLogout} className="nav-link" as={Link} to="#">
                   logOut {""}
