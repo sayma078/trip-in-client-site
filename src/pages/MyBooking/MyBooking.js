@@ -6,7 +6,7 @@ const MyBooking = () => {
 
   const [orderList, setOrderList] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orderEmail?email=" + loginUser.email)
+    fetch("https://glacial-tor-19985.herokuapp.com/orderEmail?email=" + loginUser.email)
       .then((res) => res.json())
       .then((data) => setOrderList(data));
   }, []);

@@ -50,6 +50,9 @@ const Header = () => {
              { loginUser?.email && <Link class="nav-link text-white" to="/mybooking">
               My Booking
               </Link>}
+              { loginUser?.email && <Link class="nav-link text-white" to="/addService">
+              Add Service
+              </Link>}
               { loginUser?.email? <Link onClick={handleLogout} class="nav-link text-white" to="/login">
                 logOut {''}{loginUser?.displayName}
               </Link>

@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
-// import serviceData from '../../data/services.json';
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
 import axios from "axios";
-import { Placeholder } from "react-bootstrap";
 
 const Details = () => {
   const { id } = useParams();
@@ -36,7 +34,7 @@ const Details = () => {
       <div className="col-md-8 ">
         <div className="card ">
           <div className="mt-4">
-            <img src={details?.img} alt="" />
+            <img className="img-fluid" src={details?.img} alt="" />
             <div className="d-flex justify-content-center mt-5 mb-2 ">
               <h3>
                 <i className="fas text-warning fa-dollar-sign"></i> {details?.cost}
@@ -78,7 +76,7 @@ const Details = () => {
           </div>
           {errors.exampleRequired && <span>This field is required</span>}
 
-          <input className="bg-warning" type="submit" value="Check" />
+          <input className="bg-warning" type="submit" value="Book Now" />
         </form>
       </div>
       </div>
