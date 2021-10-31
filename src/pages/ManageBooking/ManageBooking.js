@@ -6,7 +6,7 @@ const ManageBooking = () => {
         fetch('https://glacial-tor-19985.herokuapp.com/booking')
         .then(res => res.json())
         .then(data => setBookingDetails(data))
-    },[])
+    },[bookingDetails])
     console.log(bookingDetails)
     const handleDelete = (id) => {
       const url = `http://localhost:5000/DeleteBookings/${id}`;
