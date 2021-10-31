@@ -44,12 +44,12 @@ const Header = () => {
               <Link class="nav-link active text-white" aria-current="page" to="/about">
               About Us
               </Link>
-              <Link class="nav-link text-white" to="/manageBooking">
+              {loginUser?.email && <Link class="nav-link text-white" to="/manageBooking">
               Manage Booking
-              </Link>
-              <Link class="nav-link text-white" to="/mybooking">
+              </Link>}
+             { loginUser?.email && <Link class="nav-link text-white" to="/mybooking">
               My Booking
-              </Link>
+              </Link>}
               { loginUser?.email? <Link onClick={handleLogout} class="nav-link text-white" to="/login">
                 logOut {''}{loginUser?.displayName}
               </Link>
