@@ -12,6 +12,7 @@ import Footer from './pages/Shared/Footer/Footer';
 import AddService from './pages/AddService/AddService';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import ManageBooking from './pages/ManageBooking/ManageBooking';
+import MyBooking from './pages/MyBooking/MyBooking';
 
 
 
@@ -45,6 +46,9 @@ function App() {
             </Route>
             <Route path="/manageBooking">
               <ManageBooking></ManageBooking>
+            </Route>
+            <Route path="/mybooking">
+              <MyBooking></MyBooking>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

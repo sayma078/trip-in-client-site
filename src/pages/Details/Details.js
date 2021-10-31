@@ -4,13 +4,14 @@ import { useParams } from "react-router";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
 import axios from "axios";
+import { Placeholder } from "react-bootstrap";
 
 const Details = () => {
   const { id } = useParams();
   const [details, setDetails] = useState([]);
   const [loginUser, setLoginUser] = useContext(AuthContext);
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://glacial-tor-19985.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
@@ -22,7 +23,7 @@ const Details = () => {
   const onSubmit = (data) => {
     const bookingData = { ...data, ...details };
     console.log(data);
-    axios.post("http://localhost:5000/booking", bookingData).then((res) => {
+    axios.post("https://glacial-tor-19985.herokuapp.com/booking", bookingData).then((res) => {
       if (res.data.insertedId) {
         alert("booking successfully");
       }
@@ -66,17 +67,17 @@ const Details = () => {
             />
           </div>
           <div className="mb-2">
-            <input {...register("address", { required: true })} />
+            <input {...register("address", { required: true })} placeholder="Address" />
           </div>
           <div className="mb-2">
             <input
               type="number"
-              {...register("phoneNumber", { required: true })}
+              {...register("phoneNumber", { required: true })} placeholder="Phone Number"
             />
           </div>
           {errors.exampleRequired && <span>This field is required</span>}
 
-          <input type="submit" value="Check Out" />
+          <input className="bg-warning" type="submit" value="Check" />
         </form>
       </div>
       </div>

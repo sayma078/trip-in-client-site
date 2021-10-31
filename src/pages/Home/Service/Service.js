@@ -8,7 +8,7 @@ const Service = (props) => {
     const{_id, name, img, description}= service;
     return (
         <div className="col-md-6 g-3  ">
-        <div className="card ">
+        <div >
           <img src={img} className="card-img-top p-3 image" alt="..." />
           <div className="card-body">
             <h5 className="card-title text-info">{name}</h5>

@@ -27,8 +27,8 @@ const GoogleLogin = () => {
       });
   };
     return (
-        <div>
-            <button className="btn btn-info" onClick={googleHandler}>
+        <div className="mt-5">
+            <button className="btn btn-info mt-5" onClick={googleHandler}>
         Sign In With Google
       </button>
         </div>
