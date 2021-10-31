@@ -5,6 +5,7 @@ import blog3 from "../../../images/blog/blog3.png";
 import blog4 from "../../../images/blog/blog4.png";
 import blog5 from "../../../images/blog/blog5.png";
 import blog6 from "../../../images/blog/blog6.png";
+import './Blogs.css';
 
 const Blogs = () => {
     return (
@@ -14,7 +15,7 @@ const Blogs = () => {
               
           <div className="col-md-4 g-3">
               
-            <div className="card ">
+            <div className="card blog">
                 <img src={blog1} className="card-img-top w-100" alt="..." />
               <div className="card-body">
                <div className="d-flex justify-content-center align-items-center mb-3">
@@ -26,7 +27,7 @@ const Blogs = () => {
                </div>
                </div>
                 <p className="card-text">
-                Last month, I had the opportunity to go on a 4-day adventure with Hayley Andersen & Kyle Hunter. Along with a group of 16 other travellers, we visited Australia’s Red Centre. We’ve seen incredible sunrises and sunsets in Uluru, Kings Canyon and the West MacDonnell Ranges before ending our trip in Alice Spring where we visited the kangaroo sanctuary.
+                The city of lights is a big place so when you rock up in Paris, it’s always good to have a little help from the locals. In this article, those locals are the blogging elite on the ground - those in the know who aren’t afraid to share their tips. If you’re heading to Paris, here are the fonts of local knowledge that we’d recommend.
                 </p>
               </div>
                 
@@ -37,7 +38,7 @@ const Blogs = () => {
 
           </div>
           <div className="col-md-4 g-3">
-            <div className="card">
+            <div className="card blog">
               <img src={blog2} className="card-img-top" alt="..." />
               <div className="card-body">
               <div className="d-flex justify-content-center align-items-center mb-3">
@@ -55,7 +56,7 @@ const Blogs = () => {
             </div>
           </div>
           <div className="col-md-4 g-3">
-            <div className="card">
+            <div className="card blog">
               <img src={blog3} className="card-img-top" alt="..." />
               <div className="card-body">
               <div className="d-flex justify-content-center align-items-center mb-3">
@@ -76,7 +77,7 @@ const Blogs = () => {
             </div>
           </div>
           <div className="col-md-4 g-3">
-            <div className="card">
+            <div className="card blog">
               <img src={blog4} className="card-img-top" alt="..." />
               <div className="card-body">
               <div className="d-flex justify-content-center align-items-center mb-3">
@@ -89,13 +90,13 @@ const Blogs = () => {
                </div>
                 <p className="card-text">
                   {" "}
-                  Earlier in March, my flatmate Raquel and myself decided to go to Jervis Bay for the weekend. This little piece of paradise is a 3-hour drive from Sydney and is part of the region of Shoalhaven. It is home to the thinnest and whitest sand I have seen in my life, it isn’t a joke!
+                  This eclectic blog is run by ex-New Yorker Yanique who moved to Paris in 2007. She posts everything from cheap-eats and where to shop, but the blog’s USP is undoubtedly the ‘Neighbourhoods’ section - or shall we say ‘arrondissements’ in French. For every neighbourhood in Paris (20 to be precise), she has listed the best places to go in each one. 
                 </p>
               </div>
             </div>
           </div>
           <div className="col-md-4 g-3">
-            <div className="card">
+            <div className="card blog">
               <img src={blog5} className="card-img-top" alt="..." />
               <div className="card-body">
               <div className="d-flex justify-content-center align-items-center mb-3">
@@ -108,13 +109,13 @@ const Blogs = () => {
                </div>
                 <p className="card-text">
                   {" "}
-                  My love story with this was definitely not love at first sight. It took a little while for me to start enjoying it, but ultimately I gave myself some time to discover what this beautiful city has to offer. Hint: there is a lot! From its vibrant cafes to its street art, museums, local bars, thrift shops and secluded beaches.
+                  This is the oldest independent and locally-owned website about Paris (in English). This means one thing: it’s full of wisdom. Created in 1999, this blog remains true to its name, uncovering the city’s secrets and local haunts - but most importantly providing practical advice for tourists. From Eurostar hacks, how to drive in Paris 
                 </p>
               </div>
             </div>
           </div>
           <div className="col-md-4 g-3">
-            <div className="card">
+            <div className="card blog">
               <img src={blog6} className="card-img-top" alt="..." />
               <div className="card-body">
               <div className="d-flex justify-content-center align-items-center mb-3">
@@ -127,7 +128,7 @@ const Blogs = () => {
                </div>
                 <p className="card-text">
                   {" "}
-                  Come with me on a road trip along the coast of Tropical North Queensland. Discover the rainforest of Port Douglas, the secret islands and stunning waterfalls around Cairns. Spot some wildlife on Magnetic Island, before heading south to the dreamy Whitsundays for some fun in the sun.
+                  Lost In Cheeseland offers superbly-written guides to the city from where to stay and what to eat. Find yourself craving ice-cream, Chinese food or even Mexican while you’re in Paris? This local knows where to go, whatever you fancy. The owner of the blog, Lindsey, is an American girl turned Parisian who fell in love with a Frenchman
                 </p>
               </div>
             </div>

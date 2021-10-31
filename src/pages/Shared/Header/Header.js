@@ -24,7 +24,7 @@ const Header = () => {
     <Navbar.Brand  as={Link} to="/home"><i className="fas fa-plane-departure text-warning"></i> <span className="text-warning">Trip_in</span></Navbar.Brand>
     <Nav className="me-auto">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
-      <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+     <Nav.Link as={Link} to="/about">About Us</Nav.Link> 
       <Nav.Link as={Link} to="/manageBooking">Manage Booking</Nav.Link>
       {loginUser?.email ? (
                 <NavLink onClick={handleLogout} className="nav-link" as={Link} to="#">

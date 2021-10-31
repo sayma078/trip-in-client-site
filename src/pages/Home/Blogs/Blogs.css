@@ -1,6 +1,7 @@
-.image{
+.blog{
     transition: 300ms ease;
 }
-.image:hover{
+.blog:hover{
     transform: scale(1.02);
 }
+

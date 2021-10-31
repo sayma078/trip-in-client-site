@@ -10,45 +10,37 @@ const About = () => {
             <h2 >What Oue Traveller Say About Us</h2>
         <div className="col-md-4 g-3">
             
-          <div className="card">
-            <img src={person1} className="card-img-top" alt="..." />
+          <div >
+            <div>
+            <img src={person1} className="card-img-top rounded-circle " alt="..." />
+            </div>
             <div className="card-body">
-              <h3>Dental Surgeon Maria Welsh </h3>
+              <h3>Lina Watson </h3>
               <p className="card-text">
-                Dr. Maria Welsh is dedicated to providing her patients with the
-                most beautiful smile together with the best dental protection
-                available nowadays. Check-ups are a major part of the job and
-                are important for patients keeping on top of their oral care.
+              Last month, I had the opportunity to go on a 4-day adventure with Hayley Andersen & Kyle Hunter. Along with a group of 16 other travellers, we visited Australia’s Red Centre. We’ve seen incredible sunrises and sunsets in Uluru, Kings Canyon and the West MacDonnell Ranges before ending our trip in Alice Spring .
               </p>
             </div>
           </div>
         </div>
         <div className="col-md-4 g-3">
-          <div className="card">
-            <img src={person2} className="card-img-top" alt="..." />
+          <div >
+            <img src={person2} className="card-img-top rounded-circle " alt="..." />
             <div className="card-body">
-              <h3> Dr. Allen Fischer</h3>
+              <h3>  Allen Fischer</h3>
               <p className="card-text">
-                Dr. Allen Fischer is dedicated to providing her patients with
-                the most beautiful smile together with the best dental
-                protection available nowadays. Check-ups are a major part of the
-                job and are important for patients keeping on top of their oral
-                care.
+              My love story with this was definitely not love at first sight. It took a little while for me to start enjoying it, but ultimately I gave myself some time to discover what this beautiful city has to offer. Hint: there is a lot! From its vibrant cafes to its street art, museums, local bars, thrift shops and secluded beaches.
               </p>
             </div>
           </div>
         </div>
         <div className="col-md-4 g-3">
-          <div className="card">
-            <img src={person3} className="card-img-top" alt="..." />
+          <div >
+            <img src={person3} className="card-img-top rounded-circle " alt="..." />
             <div className="card-body">
-              <h3>Dr. Lisa Palmer</h3>
+              <h3>Tisa Palmer</h3>
               <p className="card-text">
                 {" "}
-                Dr. Lisa Palmer is dedicated to providing her patients with the
-                most beautiful smile together with the best dental protection
-                available nowadays. Check-ups are a major part of the job and
-                are important for patients keeping on top of their oral care.
+                Earlier in March, my flatmate Raquel and myself decided to go to Jervis Bay for the weekend. This little piece of paradise is a 3-hour drive from Sydney and is part of the region of Shoalhaven. It is home to the thinnest and whitest sand I have seen in my life, it isn’t a joke!
               </p>
             </div>
           </div>

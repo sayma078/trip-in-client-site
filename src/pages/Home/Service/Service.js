@@ -9,7 +9,7 @@ const Service = (props) => {
     return (
         <div className="col-md-6 g-3  ">
         <div className="card ">
-          <img src={img} className="card-img-top p-3" alt="..." />
+          <img src={img} className="card-img-top p-3 image" alt="..." />
           <div className="card-body">
             <h5 className="card-title text-info">{name}</h5>
             <p className="card-text">{description.slice(0,110)}...</p>
