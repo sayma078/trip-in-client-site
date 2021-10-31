@@ -8,6 +8,16 @@ const ManageBooking = () => {
         .then(data => setBookingDetails(data))
     },[])
     console.log(bookingDetails)
+    const handleDelete = (id) => {
+      const url = `http://localhost:5000/DeleteBookings/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("delete successfully", data);
+        });
+    };
     return (
         <div className="container">
            <h2>Manage Booking</h2>
@@ -25,8 +35,8 @@ const ManageBooking = () => {
             <tr>
               <td>{booking?.userName}</td>
               <td>{booking?.phoneNumber}</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>{booking?.bookingStatus}</td>
+              <td><button onClick={()=>handleDelete(booking?._id)}>Delete</button></td>
             </tr>
           ))} 
           </tbody>

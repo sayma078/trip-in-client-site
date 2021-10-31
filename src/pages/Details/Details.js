@@ -21,7 +21,8 @@ const Details = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    const bookingData = { ...data, ...details };
+    const {name,img, cost, time, description} = details;
+    const bookingData = { ...data, name,img, cost, time, description,bookingStatus :"pending" };
     console.log(data);
     axios.post("https://glacial-tor-19985.herokuapp.com/booking", bookingData).then((res) => {
       if (res.data.insertedId) {
