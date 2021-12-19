@@ -44,7 +44,10 @@ const Header = () => {
               <Link class="nav-link active text-white" aria-current="page" to="/about">
               About Us
               </Link>
-              {loginUser?.email && <Link class="nav-link text-white" to="/manageBooking">
+              {loginUser?.email && <Link class="nav-link text-white" to="/dashboard">
+              DashBoard
+              </Link>}
+              {/* {loginUser?.email && <Link class="nav-link text-white" to="/manageBooking">
               Manage Booking
               </Link>}
              { loginUser?.email && <Link class="nav-link text-white" to="/mybooking">
@@ -52,7 +55,7 @@ const Header = () => {
               </Link>}
               { loginUser?.email && <Link class="nav-link text-white" to="/addService">
               Add Service
-              </Link>}
+              </Link>} */}
               { loginUser?.email? <Link onClick={handleLogout} class="nav-link text-white" to="/login">
                 logOut {''}{loginUser?.displayName}
               </Link>

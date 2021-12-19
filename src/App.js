@@ -13,6 +13,8 @@ import AddService from './pages/AddService/AddService';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import ManageBooking from './pages/ManageBooking/ManageBooking';
 import MyBooking from './pages/MyBooking/MyBooking';
+import Dashboard from './pages/Dashboard/Dashboard';
+import ReviewPage from './pages/Review/ReviewPage';
 
 
 
@@ -41,6 +43,9 @@ function App() {
             <PrivateRoute path="/details/:id">
               <Details></Details>
             </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
             <PrivateRoute path="/addService">
               <AddService></AddService>
             </PrivateRoute>
@@ -49,6 +54,9 @@ function App() {
             </Route>
             <PrivateRoute path="/mybooking">
               <MyBooking></MyBooking>
+            </PrivateRoute>
+            <PrivateRoute path="/review">
+              <ReviewPage></ReviewPage>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

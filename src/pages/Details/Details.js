@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
 import axios from "axios";
@@ -13,6 +13,8 @@ const Details = () => {
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
+  const history = useHistory();
+
   const {
     register,
     handleSubmit,
@@ -24,7 +26,7 @@ const Details = () => {
     console.log(data);
     axios.post("https://glacial-tor-19985.herokuapp.com/booking", bookingData).then((res) => {
       if (res.data.insertedId) {
-        alert("booking successfully");
+        alert(`booking successfully. Review ${history.push("/review")}`);
       }
     });
   };
