@@ -1,5 +1,5 @@
 import React from 'react';
-import About from '../../About/About';
+import Reviews from '../../Review/Reviews';
 import Banner from '../Banner/Banner';
 import Blogs from '../Blogs/Blogs';
 import Location from '../Location/Location';
@@ -12,6 +12,7 @@ const Homee = () => {
             <Services></Services>
             <Blogs></Blogs>
             <Location></Location>
+            <Reviews></Reviews>
         </div>
     );
 };
