@@ -5,7 +5,7 @@ const Reviews = () => {
     const [userReview, setUserReview] = useState([]);
 
     useEffect(() => {
-        fetch('https://glacial-tor-19985.herokuapp.com/review')
+        fetch('https://glacial-tor-19985.herokuapp.com/reviews')
           .then(res => res.json())
           .then(data => setUserReview(data))
     })

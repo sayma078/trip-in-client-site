@@ -10,7 +10,7 @@ const ReviewPage = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("https://glacial-tor-19985.herokuapp.com/review", data).then((res) => {
+    axios.post("https://glacial-tor-19985.herokuapp.com/reviews", data).then((res) => {
       if (res.data.insertedId) {
         alert(`add successfully ${history.push("/home")}`);
         reset();
